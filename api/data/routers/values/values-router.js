@@ -13,12 +13,5 @@ value.get('/', async(req, res, next) => {
   catch(err) {next(err)}
 })
 
-// value.post('/:user_id', async(req, res, next) => {
-//   try {
-//     const trut
-//   }
-//   catch(err) {next(err)}
-// })
-
 
 module.exports = value

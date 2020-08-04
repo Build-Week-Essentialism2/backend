@@ -4,7 +4,7 @@ const supertest = require('supertest')
 
 describe('GET - projects router', () => {
   describe('get a user\'s projects', () => {
-    it('returns the user\'s projects', async () => {
+    it('gives error when not logged in and attempting a get', async () => {
       await supertest(server).get('/api/projects/1')
       .then(res => {
         expect(res.statusCode).toBe(401)
